@@ -8,7 +8,7 @@ db = conn.four
 coll_acrual = db.acrual
 coll_payment = db.payment
 
-# Getting data.
+# Getting and sorting data.
 
 acruals, payments, result, sad_payments = [], [], [], []
 acruals_len, payments_len = 0, 0
@@ -55,6 +55,6 @@ for payment in payments: # Getting the list of the payments without an acrual
 print("\nHint! One row - one pair: payment is on the left and it's acrual is on the right.\n")
 for elem in result:
     print(elem)
-print("\nHere you may check all payments with no acrual\n")
+print("\nHere you may check all payments with no acrual:\n")
 for elem in sad_payments:
     print(elem)
